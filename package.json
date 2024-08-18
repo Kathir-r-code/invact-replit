@@ -11,10 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
+    "@sequelize/core": "^7.0.0-alpha.37",
     "@types/node": "^20.9.1",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "node-fetch": "^3.3.2",
+    "sequelize": "^6.37.3",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7"
   }
