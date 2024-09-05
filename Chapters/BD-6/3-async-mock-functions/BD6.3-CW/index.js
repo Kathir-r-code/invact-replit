@@ -23,7 +23,7 @@ async function getReviewById(id) {
 }
 
 async function addReview(review) {
-  review[id] = reviews.length + 1;
+  review.id = reviews.length + 1;
   reviews.push(review);
   return review;
 }
@@ -33,7 +33,7 @@ async function getUserById(id) {
 }
 
 async function addUser(user) {
-  user[id] = users.length + 1;
+  user.id = users.length + 1;
   users.push(user);
   return user;
 }
@@ -45,7 +45,7 @@ app.get("/reviews", async (req, res) => {
 });
 
 // Get a review by ID
-app.get("/reivews/details/:id", async (req, res) => {
+app.get("/reviews/details/:id", async (req, res) => {
   const id = parseInt(req.params.id);
   const review = await getReviewById(id);
   if (!review) {

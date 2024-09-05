@@ -85,13 +85,13 @@ describe("api enpoint test", () => {
   });
 
   it("should return 404 for non-existing review", async () => {
-    getReviewById.moxResolvedValue(null);
+    getReviewById.mockResolvedValue(null);
     const result = await request(server).get("/reviews/details/99");
     expect(result.statusCode).toEqual(404);
   });
 
   it("should return 404 for non-existing user", async () => {
-    getUserById.moxResolvedValue(null);
+    getUserById.mockResolvedValue(null);
     const result = await request(server).get("/users/details/99");
     expect(result.statusCode).toEqual(404);
   });
