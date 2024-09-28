@@ -1,6 +1,16 @@
 {
   "version": 2,
   "name": "Invact",
-  "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "rewrites": [{ "source": "/(.*)", "destination": "index.js" }]
+  "builds": [
+    {
+      "src": "Chapters/BD-6/6-CICD-github- actions/BD6.6-CW/server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "Chapters/BD-6/6-CICD-github- actions/BD6.6-CW/server.js"
+    }
+  ]
 }
