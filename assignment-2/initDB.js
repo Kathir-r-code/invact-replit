@@ -1,5 +1,5 @@
-const sqlite3 = require("sqlite3").verbose();
-const db = new sqlite3.Database("database.sqlite");
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('database.sqlite');
 
 db.serialize(() => {
   // Create Chefs table
@@ -46,4 +46,4 @@ db.serialize(() => {
 });
 
 db.close();
-console.log("Database initialized and seeded.");
+console.log('Database initialized and seeded.');
