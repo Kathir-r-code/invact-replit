@@ -3,14 +3,14 @@
   "name": "Invact",
   "builds": [
     {
-      "src": "Chapters/BD-6/6-CICD-github- actions/BD6.6-CW/server.js",
+      "src": "Chapters/BD-6/6-CICD-github-actions/BD6.6-CW/server.js",
       "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "Chapters/BD-6/6-CICD-github- actions/BD6.6-CW/server.js"
+      "destination": "Chapters/BD-6/6-CICD-github-actions/BD6.6-CW/server.js"
     }
   ]
 }
